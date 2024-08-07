@@ -37,8 +37,8 @@ body {
 }
 
 /* Видаляємо стандартну стилізацію для всіх ul та il, у яких є атрибут class */
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
