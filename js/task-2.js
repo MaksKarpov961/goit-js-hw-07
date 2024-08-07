@@ -24,3 +24,36 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+
+
+
+// знаходимо елемент
+const gallery = document.querySelector(".gallery")
+
+// робимо буфер
+const fragment = document.createDocumentFragment();
+
+// запускаєм цикл для додавання 3 картинок 
+for (let index = 1; index < 4; index++) {
+  const image = images[index];
+  
+  // створюємо нові елементи li та img
+  const newListItem = document.createElement("li")
+  const newImage = document.createElement("img")
+  
+  // встановлюємо атрибути для img
+  newImage.src = image.url
+  newImage.alt = image.alt
+  newImage.width = 360
+  
+  // додаємо img до li
+  newListItem.appendChild(newImage)
+
+  // додаємо li (в якому вже є img) до буфера
+  fragment.appendChild(newListItem)
+  
+}
+
+// після виконнання циклу (і наповненням буфера) додаємо це все в ul 
+gallery.appendChild(fragment)
