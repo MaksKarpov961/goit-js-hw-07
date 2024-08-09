@@ -18,7 +18,7 @@ const inputNumber = document.querySelector('#controls input');
 
 buttonCreate.addEventListener("click", () => {
   const valueInputNumber = createElements();
-  if (valueInputNumber !== null) { // Переконайтеся, що значення не null
+  if (valueInputNumber !== null) { // Переконуємося, що значення не null
     createBoxes(valueInputNumber); // Передаємо значення в createBoxes
   }
 });
