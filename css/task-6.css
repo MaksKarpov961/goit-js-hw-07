@@ -1,0 +1,68 @@
+#controls{
+  background-color: #f6f6fe;
+  padding: 32px;
+  display: inline-flex;
+  gap: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+
+#controls input{
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  padding-left: 62px;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button{
+  border-radius: 8px;
+
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms linear;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+
+#controls  button[data-create] {
+  padding: 8px 32px;
+  background-color: #4e75ff;
+}
+
+#controls button[data-create]:hover,
+#controls button[data-create]:focus {
+  background-color: #6c8cff;
+}
+
+#controls button[data-destroy] {
+  padding: 8px 26px;
+  background-color: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover,
+#controls button[data-destroy]:focus {
+  background-color: #ff7070;
+}
+
+
+
+#boxes{
+  background-color: #f6f6fe;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 44px;
+  /* padding: 0px; */
+}
